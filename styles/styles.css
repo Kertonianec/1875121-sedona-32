@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -37,6 +45,28 @@ body {
   background: #ffffff;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  width: 309px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-logo {
+  width: 138px;
+  margin: 0 auto;
+}
+
+.navigation-list-navigation-user {
+  max-width: 250px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -54,7 +84,13 @@ body {
   background-color: #756257;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
+  width: 1200px;
+  margin: 0 auto;
   color: #000000;
   background-color: #ffffff;
   background-image: url("/images/index-background.jpg");
@@ -69,6 +105,16 @@ body {
   background-repeat: no-repeat;
   font-size: 18px;
   line-height: 23px;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
 }
 
 .main-title {
@@ -88,8 +134,51 @@ body {
 }
 
 .advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   list-style-type: none;
+}
+
+.advantages-item-first {
+  width: 1200px;
+}
+
+.advantages-list-columns {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 1200px;
+}
+
+.advantages-item-house {
+  width: 400px;
+}
+
+.advantages-item-food {
+  width: 400px;
+}
+
+.advantages-item-souvenirs {
+  width: 400px;
+}
+
+.advantages-item-second {
+  width: 1200px;
+}
+
+.advantages-item-third {
+  width: 400px;
+}
+
+.advantages-item-fourth {
+  width: 400px;
+}
+
+.advantages-item-fifth {
+  width: 400px;
 }
 
 .advantages-title {
@@ -133,7 +222,10 @@ body {
 .advantages-list-columns p {
   color: #333333;
 }
+
 .hotel-search {
+  width: 1200px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -162,6 +254,8 @@ body {
 }
 
 .newsletter {
+  width: 1200px;
+  margin: 0 auto;
   color: #ffffff;
   background-color: #f2f2f2;
   background-image: url("/images/background.jpg");
@@ -197,12 +291,33 @@ body {
   background-color: #ffffff;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social {
+  width: 107px;
+  margin-right: 61px;
+}
+
+.footer-contacts {
+  width: 720px;
+  margin-right: 53px;
+}
+
 .footer-contacts-address-phone {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+.about-htmlacademy {
+  margin-left: auto;
+  width: 115px;
 }
 
 .htmlacademy-link {

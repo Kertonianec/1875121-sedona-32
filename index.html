@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -43,7 +43,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
+    <main class="main-container main-index">
+      <div class="page-container">
       <h1 class="visually-hidden">Welcom to the gardeous Sedona</h1>
       <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Логотип Седона">
         <p class="main-title">Седона — небольшой городок в Аризоне,
@@ -127,37 +128,42 @@
           </button>
         </form>
       </section>
+      </div>
     </main>
     <footer class="page-footer">
-      <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Телефон</h2>
-        <address class="footer-contacts-address-phone">
-          <p class="number">+7 (812) 812-12-12</p>
-        </address>
-      </section>
-        <p class="about-text">
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
-        </p>
+      <div class="page-footer-container">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Телефон</h2>
+          <address class="footer-contacts-address-phone">
+            <p class="number">+7 (812) 812-12-12</p>
+          </address>
+        </section>
+        <div class="about-htmlacademy">
+          <p class="about-text">
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
