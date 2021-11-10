@@ -16,19 +16,20 @@
 
 html {
   height: 100%;
+  background-color: #f2f2f2;
 }
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-  background-color: #f2f2f2;
 }
 
 .visually-hidden {
@@ -113,7 +114,6 @@ body {
 }
 
 .main-index {
-  width: 1200px;
   margin: 0 auto;
   color: #000000;
   background-color: #ffffff;
@@ -123,7 +123,6 @@ body {
 }
 
 .main-inner {
-  width: 1200px;
   margin: 0 auto;
   color: #ffffff;
   background-image: url("../images/catalog-background.jpg");
@@ -187,6 +186,11 @@ body {
   width: 1200px;
 }
 
+.image-city {
+  display: block;
+  width: 800px;
+}
+
 .advantages-list-columns {
   margin: 0;
   padding: 0;
@@ -208,6 +212,10 @@ body {
 
 .advantages-item-second {
   width: 1200px;
+}
+
+.image-bridge {
+  display: block;
 }
 
 .advantages-item-third {
@@ -352,7 +360,6 @@ body {
 
 .page-footer-container {
   display: flex;
-  width: 1200px;
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 30px;
