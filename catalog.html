@@ -86,7 +86,7 @@
                   </li>
                   <li class="hotel-filter-item">
                     <label class="control">
-                      <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                      <input class="visually-hidden control-input" type="checkbox" name="wi-fi" >
                       <span class="control-mark"></span>
                       <span class="control-label">Wi-Fi</span>
                     </label>
@@ -121,18 +121,26 @@
               </fieldset>
               <fieldset class="hotel-filter-price">
                 <legend class="hotel-filter-title title-price">Стоимость, ₽:</legend>
-                <button class="range-toggle toggle-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
-                <button class="range-toggle toggle-max" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </button>
-                <label class="hotel-filter-label">
-                  от <input class="hotel-filter-input" type="number" name="min-price">
-                </label>
-                <label class="hotel-filter-label">
-                  до <input class="hotel-filter-input" type="number" name="max-price">
-                </label>
+                  <div class="range-wrapper-inputs">
+                    <label class="hotel-filter-label">
+                      от <input class="hotel-filter-input" type="number" name="min-price">
+                    </label>
+                    <label class="hotel-filter-label">
+                      до <input class="hotel-filter-input" type="number" name="max-price">
+                    </label>
+                  </div>
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="width: 227px">
+                        <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
+                      </div>
+                    </div>
+                </div>
               </fieldset>
               <section class="hotel-button">
                 <button class="button button-submit" type="submit">Применить</button>
@@ -275,7 +283,7 @@
             </form>
           </div>
         </section>
-        <section class="newsletter">
+        <section class="newsletter-catalog">
           <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама,
             честное бойскаутское!</p>
