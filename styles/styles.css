@@ -1188,6 +1188,14 @@ body {
   margin-bottom: 30px;
 }
 
+.hotel-card-image:hover {
+  opacity: 0.6;
+}
+
+.hotel-card-image:focus {
+  border: 3px solid #83b3d3;
+}
+
 .hotel-card {
   width: 1056px;
   display: flex;
@@ -1224,6 +1232,16 @@ body {
   font-size: 24px;
   line-height: 31px;
   color: #000000;
+}
+
+.hotel-card-title:hover {
+  color: #756257;
+}
+
+.hotel-card-title:focus {
+  border: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .hotel-card-type {
