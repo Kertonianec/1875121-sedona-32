@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -122,11 +123,11 @@
               <fieldset class="hotel-filter-price">
                 <legend class="hotel-filter-title title-price">Стоимость, ₽:</legend>
                   <div class="range-wrapper-inputs">
-                    <label class="hotel-filter-label">
-                      от <input class="hotel-filter-input" type="number" name="min-price">
+                    <label class="hotel-filter-label hotel-filter-label-min">
+                      <input class="range-input" type="number" value="0" name="min-price">от
                     </label>
-                    <label class="hotel-filter-label">
-                      до <input class="hotel-filter-input" type="number" name="max-price">
+                    <label class="hotel-filter-label hotel-filter-label-max">
+                      <input class="range-input" type="number" value="9000" name="max-price">до
                     </label>
                   </div>
                   <div class="range">
@@ -152,11 +153,11 @@
         <section class="sorting-hotels">
           <div class="sorting">
             <h2 class="visually-hidden">Сортировка гостиниц</h2>
-            <p>Найдено гостиниц: 38</p>
+            <p class="sorting-title">Найдено гостиниц: 38</p>
             <form class="sorting-type">
               <label class="visually-hidden" for="sorting">Сортировка</label>
               <select class="select-control" id="sorting" name="sorting">
-                <option value="cheap">Сначала дешевые</option>
+                <option value="cheap">Сначала дешёвые</option>
                 <option value="popular">Сначала популярное</option>
                 <option value="expensive">Сначала дорогие</option>
               </select>
@@ -189,13 +190,18 @@
                 </a>
               </div>
               <div class="block-card-second">
-                <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+                <a class="hotel-card-link" href="hotel.html">
+                  <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+                </a>
                 <p class="hotel-card-type">Гостиница</p>
                 <p class="hotel-card-price">От 4000 ₽</p>
                 <a class="hotel-card-brown button" href="#">подробнее</a>
                 <a class="hotel-card-blue button" href="#">В избранное</a>
               </div>
               <div class="block-card-third">
+                <svg class="rating-four-stars" width="91" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0ZM34 0l2.1 6.5H43l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L34 0ZM59 0l2.1 6.5H68l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L59 0ZM82 0l2.1 6.5H91l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L82 0Z" fill="#83B3D3"/>
+                </svg>
                 <p class="hotel-card-rating">Рейтинг: 8,5</p>
               </div>
             </li>
@@ -206,13 +212,18 @@
                 </a>
               </div>
               <div class="block-card-second">
-                <h3 class="hotel-card-title">Desert Quail Inn</h3>
+                <a class="hotel-card-link" href="hotel.html">
+                  <h3 class="hotel-card-title">Desert Quail Inn</h3>
+                </a>
                 <p class="hotel-card-type">Мотель</p>
                 <p class="hotel-card-price">От 3000 ₽</p>
                 <a class="hotel-card-brown button" href="#">подробнее</a>
                 <a class="hotel-card-blue button" href="#">В избранное</a>
               </div>
               <div class="block-card-third">
+                <svg class="rating-three-stars" width="68" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0ZM34 0l2.1 6.5H43l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L34 0ZM59 0l2.1 6.5H68l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L59 0Z" fill="#83B3D3"/>
+                </svg>
                 <p class="hotel-card-rating">Рейтинг: 8,9</p>
               </div>
             </li>
@@ -223,13 +234,18 @@
                 </a>
               </div>
               <div class="block-card-second">
-                <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+                <a class="hotel-card-link" href="hotel.html">
+                  <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+                </a>
                 <p class="hotel-card-type">Апартаменты</p>
                 <p class="hotel-card-price">От 2000 ₽</p>
                 <a class="hotel-card-brown button" href="#">подробнее</a>
                 <a class="hotel-card-green button" href="#">В избранное</a>
               </div>
               <div class="block-card-third">
+                <svg class="rating-two-stars" width="43" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0ZM34 0l2.1 6.5H43l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L34 0Z" fill="#83B3D3"/>
+                </svg>
                 <p class="hotel-card-rating">Рейтинг: 9,2</p>
               </div>
             </li>
@@ -240,13 +256,18 @@
                 </a>
               </div>
               <div class="block-card-second">
-                <h3 class="hotel-card-title">GreenTree Inn</h3>
+                <a class="hotel-card-link" href="hotel.html">
+                  <h3 class="hotel-card-title">GreenTree Inn</h3>
+                </a>
                 <p class="hotel-card-type">Гостиница</p>
                 <p class="hotel-card-price">От 3000 ₽</p>
                 <a class="hotel-card-brown button" href="#">подробнее</a>
                 <a class="hotel-card-blue button" href="#">В избранное</a>
               </div>
               <div class="block-card-third">
+                <svg class="rating-two-stars" width="43" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0ZM34 0l2.1 6.5H43l-5.6 4 2.2 6.5-5.6-4-5.6 4 2.2-6.5-5.6-4h6.9L34 0Z" fill="#83B3D3"/>
+                </svg>
                 <p class="hotel-card-rating">Рейтинг: 9,2</p>
               </div>
             </li>
@@ -275,7 +296,7 @@
             </ul>
             <form class="pages">
               <label class="hotel-pages" for="pages">Гостиниц на странице:</label>
-              <select class="select-control" id="pages" name="pages">
+              <select class="select-control-pages" id="pages" name="pages">
                 <option value="four">4</option>
                 <option value="five">5</option>
               </select>
